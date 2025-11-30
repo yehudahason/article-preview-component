@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --GrayishBlue: hsl(217, 19%, 35%);
   --DarkBlue: hsl(214, 17%, 51%);
   --GrayishBlue2: hsl(212, 23%, 69%);
   --LightGrayishBlue: hsl(210, 46%, 95%);
+  font-size: 13px;
 }
 
 * {
@@ -12,6 +15,7 @@
 }
 
 body {
+  font-family: "Manrope";
   background-color: var(--LightGrayishBlue);
   display: flex;
   justify-content: center;
@@ -27,13 +31,14 @@ body {
   flex-direction: column;
   width: 327px;
   height: 528px;
-  background-color: blueviolet;
+  background-color: white;
+  border-radius: 6px;
 }
 
 .img-con {
   width: 100%;
-  height: 200px;
   overflow: hidden;
+  border-radius: 6px 6px 0 0;
 }
 .img-con .imgsrc {
   content: url("../images/drawers.jpg");
@@ -44,9 +49,57 @@ body {
 }
 
 .text {
-  padding: 24px;
+  font-size: 1rem;
+  padding: 2.5rem;
   color: var(--GrayishBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  height: 100%;
 }
+.text h3 {
+  font-size: 1.5rem;
+  line-height: 130%;
+  letter-spacing: 0.25px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.michelle {
+  display: flex;
+  width: 170px;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.michelle p {
+  text-align: left;
+  line-height: 140%;
+  letter-spacing: 25%;
+}
+.michelle p b {
+  text-align: left;
+  letter-spacing: 0.12%;
+}
+.michelle img {
+  height: 40px;
+  border-radius: 50%;
+}
+.share-btn {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--DarkBlue);
+}
+
+.share-btn.dark img {
+  filter: brightness(0) invert(1); /* turns SVG white */
+}
+
 @media (min-width: 768px) and (max-width: 1100px) {
   .container {
     width: 608px;
@@ -57,6 +110,7 @@ body {
     height: 346px;
     width: 229px;
     flex-shrink: 0;
+    border-radius: 6px 0px 0 6px;
   }
   .img-con .imgsrc {
     content: url("../images/tabletpic.jpg");
@@ -78,6 +132,7 @@ body {
     height: 280px;
     width: 285px;
     flex-shrink: 0;
+    border-radius: 6px 0px 0 6px;
   }
 
   .img-con .imgsrc {
