@@ -18,13 +18,15 @@
 body {
   font-family: "Manrope";
   background-color: var(--LightGrayishBlue);
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   padding: 1rem;
 }
-
 button:hover {
   cursor: pointer;
 }
@@ -63,7 +65,7 @@ button:hover {
   gap: 1.5rem;
   min-height: auto;
 }
-.main-text h3 {
+.main-text h1 {
   font-size: 1.5rem;
   line-height: 130%;
   letter-spacing: 0.25px;
