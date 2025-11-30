@@ -66,7 +66,7 @@ body {
   letter-spacing: 0.25px;
 }
 
-.bottom {
+.michelle-bottom {
   display: flex;
   justify-content: space-between;
 }
@@ -163,7 +163,7 @@ body {
 .share-links-bottom.hide {
   display: none;
 }
-.bottom.hide {
+.michelle-bottom.hide {
   display: none;
 }
 @media (min-width: 768px) and (max-width: 1100px) {
