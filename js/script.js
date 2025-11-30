@@ -16,6 +16,8 @@ btn1.addEventListener("click", (e) => {
   if (window.innerWidth < 768) {
     slb.classList.toggle("hide");
     mbottom.classList.toggle("hide");
+    activeBtn.classList.remove("active");
+
     return;
   }
   popUp.classList.toggle("active");
