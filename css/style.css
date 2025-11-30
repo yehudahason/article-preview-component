@@ -32,13 +32,14 @@ body {
   width: 327px;
   height: 528px;
   background-color: white;
-  border-radius: 6px;
+  border-radius: 9px;
 }
 
 .img-con {
   width: 100%;
+  height: 200px;
+  border-radius: 9px 9px 0 0;
   overflow: hidden;
-  border-radius: 6px 6px 0 0;
 }
 .img-con .imgsrc {
   content: url("../images/drawers.jpg");
@@ -50,13 +51,13 @@ body {
 
 .text {
   font-size: 1rem;
-  padding: 2.5rem;
+  padding: 2rem;
   color: var(--GrayishBlue);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2.5rem;
-  height: 100%;
+  gap: 1.5rem;
+  min-height: auto;
 }
 .text h3 {
   font-size: 1.5rem;
@@ -100,6 +101,69 @@ body {
   filter: brightness(0) invert(1); /* turns SVG white */
 }
 
+.share-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.share-popup {
+  position: absolute;
+  bottom: 60px; /* popup above button */
+  left: -97px;
+  background: #48556a;
+  padding: 14px 26px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+/* triangle arrow */
+.share-popup::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  border-width: 8px 8px 0 8px;
+  border-style: solid;
+  border-color: #48556a transparent transparent transparent;
+}
+
+.share-label {
+  color: #b9c1cc;
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+}
+
+/* WHEN POPUP ACTIVE */
+.share-wrapper.active .share-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.share-bottom {
+  height: 80px;
+  width: 100%;
+  background-color: var(--GrayishBlue);
+  overflow: hidden;
+  border-radius: 0 0 9px 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.share-bottom.hide {
+  display: none;
+}
+.bottom.hide {
+  display: none;
+}
 @media (min-width: 768px) and (max-width: 1100px) {
   .container {
     width: 608px;
@@ -110,7 +174,7 @@ body {
     height: 346px;
     width: 229px;
     flex-shrink: 0;
-    border-radius: 6px 0px 0 6px;
+    border-radius: 9px 0px 0 9px;
   }
   .img-con .imgsrc {
     content: url("../images/tabletpic.jpg");
@@ -118,6 +182,9 @@ body {
   .text {
     flex: 1;
     padding: 32px 40px;
+  }
+  .share-bottom {
+    display: none;
   }
 }
 
@@ -132,10 +199,13 @@ body {
     height: 280px;
     width: 285px;
     flex-shrink: 0;
-    border-radius: 6px 0px 0 6px;
+    border-radius: 9px 0px 0 9px;
   }
 
   .img-con .imgsrc {
     content: url("../images/tabletpic.jpg");
+  }
+  .share-bottom {
+    display: none;
   }
 }
