@@ -15,6 +15,7 @@ shareButton1.addEventListener("click", (e) => {
   if (window.innerWidth < 768) {
     shareBottom.classList.toggle("hide");
     bottom.classList.toggle("hide");
+    return;
   }
   popUp.classList.toggle("active");
 });
