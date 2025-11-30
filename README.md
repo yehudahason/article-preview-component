@@ -6,6 +6,8 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 - Solution URL: [GitHub Pages](https://yehudahason.github.io/article-preview-component/)
 
+### Built with
+
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
