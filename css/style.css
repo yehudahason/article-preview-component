@@ -25,6 +25,9 @@ body {
   padding: 1rem;
 }
 
+button:hover {
+  cursor: pointer;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -52,7 +55,7 @@ body {
 
 .main-text {
   font-size: 1rem;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
   color: var(--GrayishBlue);
   display: flex;
   flex-direction: column;
@@ -69,6 +72,7 @@ body {
 .michelle-bottom {
   display: flex;
   justify-content: space-between;
+  padding: 0.7rem 0.4rem;
 }
 .michelle {
   display: flex;
@@ -106,6 +110,7 @@ body {
 .share-wrapper {
   position: relative;
   display: inline-block;
+  padding: 0.6rem;
 }
 
 .share-popup {
