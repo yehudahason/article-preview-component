@@ -74,7 +74,8 @@ button:hover {
 .michelle-bottom {
   display: flex;
   justify-content: space-between;
-  padding: 0.7rem 0.4rem;
+  align-items: center;
+  padding: 0.4rem;
 }
 .michelle {
   display: flex;
@@ -117,8 +118,8 @@ button:hover {
 
 .share-popup {
   position: absolute;
-  bottom: 60px; /* popup above button */
-  left: -97px;
+  bottom: 64px; /* popup above button */
+  left: -89px;
   background: var(--darkB);
   padding: 14px 26px;
   border-radius: 10px;
@@ -157,7 +158,8 @@ button:hover {
 }
 
 .share-links-bottom {
-  height: 65px;
+  height: 76px;
+  margin: -2.75px;
   width: 100%;
   background-color: var(--GrayishBlue);
   overflow: hidden;
