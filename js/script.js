@@ -15,7 +15,6 @@ shareButton1.addEventListener("click", (e) => {
   if (window.innerWidth < 768) {
     shareBottom.classList.toggle("hide");
     bottom.classList.toggle("hide");
-    return;
   }
   popUp.classList.toggle("active");
 });
@@ -23,4 +22,5 @@ shareButton1.addEventListener("click", (e) => {
 shareButton2.addEventListener("click", (e) => {
   shareBottom.classList.toggle("hide");
   bottom.classList.remove("hide");
+  popUp.classList.remove("active");
 });
