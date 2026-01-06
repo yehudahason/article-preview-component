@@ -16,4 +16,4 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ## Author
 
-Yehuda Hason .
+- Frontend Mentor - [Yehuda Hason](https://www.frontendmentor.io/profile/yehudahason)
