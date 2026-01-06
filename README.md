@@ -4,7 +4,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [GitHub Pages](https://yehudahason.github.io/article-preview-component/)
+- Live Site : [GitHub Pages](https://yehudahason.github.io/article-preview-component/)
 
 ### Built with
 
